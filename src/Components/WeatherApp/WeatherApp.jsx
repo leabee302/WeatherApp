@@ -32,7 +32,7 @@ const WeatherApp = () => {
    const temperature = document.getElementsByClassName("weather-temp");
    const location = document.getElementsByClassName("weather-location");
 
-   humidity[0].innerHTML = data.main.humidity+ '%';
+   humidity[0].innerHTML = data.main.humidity+" %";
    wind[0].innerHTML = (data.wind.speed)+" MPH";
    temperature[0].innerHTML = Math.floor(data.main.temp)+"℉";
    location[0].innerHTML = data.name;
@@ -90,14 +90,14 @@ const WeatherApp = () => {
        <div className="element">
          <img src={humidity_icon} alt="" className="icon" />
          <div className="data">
-           <div className="humidity-percent">64%</div>
+           <div className="humidity-percentage">64%</div>
            <div className="text">Humidity</div>
          </div>
        </div>
        <div className="element">
          <img src={wind_icon} alt="" className="icon" />
          <div className="data">
-           <div className="wind-Speed">18 mph</div>
+           <div className="wind-rate">18 mph</div>
            <div className="text">Wind Speed</div>
          </div>
        </div>
